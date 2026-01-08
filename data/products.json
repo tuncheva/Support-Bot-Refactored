@@ -1,0 +1,902 @@
+[
+  {
+    "id": "P1001",
+    "name": "SmartWatch Pro",
+    "description": "Smartwatch with heart rate tracking and GPS.",
+    "price": 199.99,
+    "category": "Wearables",
+    "name_bg": "Умен часовник Pro",
+    "description_bg": "Умен часовник с проследяване на сърдечния ритъм и GPS."
+  },
+  {
+    "id": "P1002",
+    "name": "Fitness Band X",
+    "description": "Lightweight fitness tracker with sleep monitoring.",
+    "price": 79.99,
+    "category": "Wearables",
+    "name_bg": "Фитнес Лента X",
+    "description_bg": "Лек фитнес проследяч със мониторинг на сън."
+  },
+  {
+    "id": "P1003",
+    "name": "NoiseCancel Headphones",
+    "description": "Wireless headphones with active noise cancellation.",
+    "price": 149.99,
+    "category": "Audio",
+    "name_bg": "Слушалки със шумоизолация",
+    "description_bg": "Безжични слушалки с активна шумоизолация."
+  },
+  {
+    "id": "P1004",
+    "name": "Bluetooth Earbuds",
+    "description": "True wireless earbuds with charging case.",
+    "price": 59.99,
+    "category": "Audio",
+    "name_bg": "Bluetooth Слушалки",
+    "description_bg": "Истински безжични слушалки с кейс за зареждане."
+  },
+  {
+    "id": "P1005",
+    "name": "Smart Home Hub",
+    "description": "Central hub for managing smart home devices.",
+    "price": 99.99,
+    "category": "Smart Home",
+    "name_bg": "Интелигентен домашен хъб",
+    "description_bg": "Централен хъб за управление на устройства на умния дом."
+  },
+  {
+    "id": "P1006",
+    "name": "Smart Light Bulb",
+    "description": "Wi-Fi enabled LED light bulb with color control.",
+    "price": 19.99,
+    "category": "Smart Home",
+    "name_bg": "Интелигентна крушка",
+    "description_bg": "LED крушка с Wi-Fi и контрол на цвета."
+  },
+  {
+    "id": "P1007",
+    "name": "Smart Plug",
+    "description": "Control appliances remotely using a smart plug.",
+    "price": 24.99,
+    "category": "Smart Home",
+    "name_bg": "Интелигентна щепсела",
+    "description_bg": "Управлявайте уреди отдалечено с интелигентна щепсела."
+  },
+  {
+    "id": "P1008",
+    "name": "Robot Vacuum",
+    "description": "Automatic vacuum cleaner with scheduling.",
+    "price": 249.99,
+    "category": "Home Appliances",
+    "name_bg": "Робот прахосмукачка",
+    "description_bg": "Автоматична прахосмукачка с планиране."
+  },
+  {
+    "id": "P1009",
+    "name": "Air Purifier",
+    "description": "Removes allergens and pollutants from the air.",
+    "price": 179.99,
+    "category": "Home Appliances",
+    "name_bg": "Пречиствател на въздух",
+    "description_bg": "Премахва алергени и замърсители от въздуха."
+  },
+  {
+    "id": "P1010",
+    "name": "Electric Kettle",
+    "description": "Fast-boiling electric kettle with auto shut-off.",
+    "price": 39.99,
+    "category": "Kitchen",
+    "name_bg": "Електричен чайник",
+    "description_bg": "Бърз електричен чайник с автоматично изключване."
+  },
+  {
+    "id": "P1011",
+    "name": "Coffee Maker",
+    "description": "Programmable coffee maker with timer.",
+    "price": 89.99,
+    "category": "Kitchen",
+    "name_bg": "Кафемашина",
+    "description_bg": "Програмируема кафемашина с таймер."
+  },
+  {
+    "id": "P1012",
+    "name": "Espresso Machine",
+    "description": "Compact espresso machine for home use.",
+    "price": 299.99,
+    "category": "Kitchen",
+    "name_bg": "Машина за еспресо",
+    "description_bg": "Компактна машина за еспресо за домашна употреба."
+  },
+  {
+    "id": "P1013",
+    "name": "Blender Pro",
+    "description": "High-speed blender for smoothies and soups.",
+    "price": 129.99,
+    "category": "Kitchen",
+    "name_bg": "Блендер Pro",
+    "description_bg": "Висока скорост блендер за смути и супи."
+  },
+  {
+    "id": "P1014",
+    "name": "Toaster Oven",
+    "description": "Multi-function toaster oven with convection.",
+    "price": 109.99,
+    "category": "Kitchen",
+    "name_bg": "Тостерна фурна",
+    "description_bg": "Многофункционална тостерна фурна с конвекция."
+  },
+  {
+    "id": "P1015",
+    "name": "Gaming Mouse",
+    "description": "High-precision gaming mouse with RGB lighting.",
+    "price": 49.99,
+    "category": "Computers",
+    "name_bg": "Игровая мишка",
+    "description_bg": "Прецизна игровая мишка с RGB осветление."
+  },
+  {
+    "id": "P1016",
+    "name": "Mechanical Keyboard",
+    "description": "Mechanical keyboard with tactile switches.",
+    "price": 119.99,
+    "category": "Computers",
+    "name_bg": "Механична клавиатура",
+    "description_bg": "Механична клавиатура с тактилни превключватели."
+  },
+  {
+    "id": "P1017",
+    "name": "Laptop Stand",
+    "description": "Adjustable aluminum laptop stand.",
+    "price": 34.99,
+    "category": "Accessories",
+    "name_bg": "Поставка за лаптоп",
+    "description_bg": "Регулируема алуминиева поставка за лаптоп."
+  },
+  {
+    "id": "P1018",
+    "name": "USB-C Hub",
+    "description": "Multi-port USB-C hub with HDMI output.",
+    "price": 44.99,
+    "category": "Accessories",
+    "name_bg": "USB-C хъб",
+    "description_bg": "Мултипортов USB-C хъб с HDMI изход."
+  },
+  {
+    "id": "P1019",
+    "name": "External SSD 1TB",
+    "description": "High-speed portable solid-state drive.",
+    "price": 159.99,
+    "category": "Storage",
+    "name_bg": "Външен SSD 1TB",
+    "description_bg": "Бърз преносим твърд диск."
+  },
+  {
+    "id": "P1020",
+    "name": "Wireless Charger",
+    "description": "Fast wireless charging pad.",
+    "price": 29.99,
+    "category": "Accessories",
+    "name_bg": "Безжично зарядно устройство",
+    "description_bg": "Бързо безжично зареждащо подложка."
+  },
+  {
+    "id": "P1021",
+    "name": "Smartphone Gimbal",
+    "description": "Stabilizer for smooth mobile video recording.",
+    "price": 99.99,
+    "category": "Photography",
+    "name_bg": "Смартфон Gimbal",
+    "description_bg": "Стабилизатор за гладко мобилно видео записване."
+  },
+  {
+    "id": "P1022",
+    "name": "Action Camera",
+    "description": "Waterproof action camera with 4K recording.",
+    "price": 199.99,
+    "category": "Photography",
+    "name_bg": "Екшън камера",
+    "description_bg": "Водоустойчива екшън камера с 4K записване."
+  },
+  {
+    "id": "P1023",
+    "name": "Tripod Stand",
+    "description": "Lightweight tripod for cameras and phones.",
+    "price": 39.99,
+    "category": "Photography",
+    "name_bg": "Тринога поставка",
+    "description_bg": "Лека тринога за камери и телефони."
+  },
+  {
+    "id": "P1024",
+    "name": "Dash Camera",
+    "description": "Car dash cam with night vision.",
+    "price": 89.99,
+    "category": "Automotive",
+    "name_bg": "Dash камера",
+    "description_bg": "Автомобилна тире камера с нощно виждане."
+  },
+  {
+    "id": "P1025",
+    "name": "Car Phone Mount",
+    "description": "Dashboard phone mount with adjustable grip.",
+    "price": 19.99,
+    "category": "Automotive",
+    "name_bg": "Държател за телефон в автомобила",
+    "description_bg": "Държател за телефон за табло с регулируем хват."
+  },
+  {
+    "id": "P1026",
+    "name": "Portable Power Bank",
+    "description": "10,000mAh power bank for mobile devices.",
+    "price": 29.99,
+    "category": "Mobile Accessories",
+    "name_bg": "Преносима батерия",
+    "description_bg": "10 000 mAh батерия за мобилни устройства."
+  },
+  {
+    "id": "P1027",
+    "name": "Solar Power Bank",
+    "description": "Solar-powered battery pack for outdoor use.",
+    "price": 49.99,
+    "category": "Mobile Accessories",
+    "name_bg": "Соларна батерия",
+    "description_bg": "Батерия на сонячна енергия за открита употреба."
+  },
+  {
+    "id": "P1028",
+    "name": "Smart Thermostat",
+    "description": "Energy-saving smart thermostat with app control.",
+    "price": 199.99,
+    "category": "Smart Home",
+    "name_bg": "Интелигентен термостат",
+    "description_bg": "Енергоспестяващ интелигентен термостат с управление през приложение."
+  },
+  {
+    "id": "P1029",
+    "name": "Security Camera",
+    "description": "Wi-Fi security camera with motion detection.",
+    "price": 79.99,
+    "category": "Security",
+    "name_bg": "Охранна камера",
+    "description_bg": "Wi-Fi охранна камера с обнаружение на движение."
+  },
+  {
+    "id": "P1030",
+    "name": "Video Doorbell",
+    "description": "Smart doorbell with live video streaming.",
+    "price": 149.99,
+    "category": "Security",
+    "name_bg": "Видеодомофон",
+    "description_bg": "Интелигентен звънец с директно видео потоци."
+  },
+  {
+    "id": "P1031",
+    "name": "Smart Lock",
+    "description": "Keyless smart door lock with app access.",
+    "price": 179.99,
+    "category": "Security",
+    "name_bg": "Интелигентна брава",
+    "description_bg": "Интелигентна брава без ключ с достъп през приложение."
+  },
+  {
+    "id": "P1032",
+    "name": "Wireless Router",
+    "description": "High-speed dual-band Wi-Fi router.",
+    "price": 129.99,
+    "category": "Networking",
+    "name_bg": "Безжичен маршрутизатор",
+    "description_bg": "Висока скорост двулентов Wi-Fi маршрутизатор."
+  },
+  {
+    "id": "P1033",
+    "name": "Mesh Wi-Fi System",
+    "description": "Whole-home mesh Wi-Fi coverage.",
+    "price": 249.99,
+    "category": "Networking",
+    "name_bg": "Mesh Wi-Fi система",
+    "description_bg": "Mesh Wi-Fi покритие за целия дом."
+  },
+  {
+    "id": "P1034",
+    "name": "Monitor 27-inch",
+    "description": "27-inch full HD computer monitor.",
+    "price": 219.99,
+    "category": "Computers",
+    "name_bg": "Монитор 27 инча",
+    "description_bg": "27-инчев монитор Full HD."
+  },
+  {
+    "id": "P1035",
+    "name": "Webcam HD",
+    "description": "1080p webcam for video conferencing.",
+    "price": 59.99,
+    "category": "Computers",
+    "name_bg": "Webcam HD",
+    "description_bg": "1080p уеб камера за видео конференции."
+  },
+  {
+    "id": "P1036",
+    "name": "Desk Lamp",
+    "description": "LED desk lamp with brightness control.",
+    "price": 34.99,
+    "category": "Office",
+    "name_bg": "Работна лампа",
+    "description_bg": "LED работна лампа с контрол на яркостта."
+  },
+  {
+    "id": "P1037",
+    "name": "Ergonomic Chair",
+    "description": "Office chair with lumbar support.",
+    "price": 199.99,
+    "category": "Office",
+    "name_bg": "Ергономичен стол",
+    "description_bg": "Офисен стол с поддържка на долния гръб."
+  },
+  {
+    "id": "P1038",
+    "name": "Standing Desk",
+    "description": "Height-adjustable standing desk.",
+    "price": 399.99,
+    "category": "Office",
+    "name_bg": "Стол за стояние",
+    "description_bg": "Регулируемо по височина бюро за стояние."
+  },
+  {
+    "id": "P1039",
+    "name": "Notebook Cooler",
+    "description": "Cooling pad for laptops.",
+    "price": 29.99,
+    "category": "Accessories",
+    "name_bg": "Охлаждане за лаптоп",
+    "description_bg": "Охлаждаща подложка за лаптопи."
+  },
+  {
+    "id": "P1040",
+    "name": "Smart Scale",
+    "description": "Digital scale with body composition analysis.",
+    "price": 59.99,
+    "category": "Health",
+    "name_bg": "Интелигентна везна",
+    "description_bg": "Цифрова везна с анализ на състава на тялото."
+  },
+  {
+    "id": "P1041",
+    "name": "Blood Pressure Monitor",
+    "description": "Home blood pressure monitoring device.",
+    "price": 69.99,
+    "category": "Health",
+    "name_bg": "Монитор за кръвно налягане",
+    "description_bg": "Устройство за мониторинг на кръвното налягане у дома."
+  },
+  {
+    "id": "P1042",
+    "name": "Electric Toothbrush",
+    "description": "Rechargeable electric toothbrush.",
+    "price": 49.99,
+    "category": "Personal Care",
+    "name_bg": "Електрическа четка за зъби",
+    "description_bg": "Преоредима електрическа четка за зъби."
+  },
+  {
+    "id": "P1043",
+    "name": "Hair Dryer",
+    "description": "High-power hair dryer with heat control.",
+    "price": 39.99,
+    "category": "Personal Care",
+    "name_bg": "Сешоар",
+    "description_bg": "Мощен сешоар с контрол на топлина."
+  },
+  {
+    "id": "P1044",
+    "name": "Smart TV 55-inch",
+    "description": "55-inch 4K smart television.",
+    "price": 599.99,
+    "category": "Entertainment",
+    "name_bg": "Smart TV 55 инча",
+    "description_bg": "55-инчев 4K интелигентен телевизор."
+  },
+  {
+    "id": "P1045",
+    "name": "Soundbar",
+    "description": "Home theater soundbar with subwoofer.",
+    "price": 199.99,
+    "category": "Entertainment",
+    "name_bg": "Звукова лента",
+    "description_bg": "Звукова лента за домашния кинотеатър със събвуфер."
+  },
+  {
+    "id": "P1046",
+    "name": "Game Controller",
+    "description": "Wireless controller for gaming consoles.",
+    "price": 59.99,
+    "category": "Gaming",
+    "name_bg": "Игров контролер",
+    "description_bg": "Безжичен контролер за игрови конзоли."
+  },
+  {
+    "id": "P1047",
+    "name": "VR Headset",
+    "description": "Virtual reality headset for immersive gaming.",
+    "price": 399.99,
+    "category": "Gaming",
+    "name_bg": "VR слушалки",
+    "description_bg": "VR слушалки за вълнуващи игри."
+  },
+  {
+    "id": "P1048",
+    "name": "Smart Projector",
+    "description": "Portable projector with Wi-Fi support.",
+    "price": 299.99,
+    "category": "Entertainment",
+    "name_bg": "Интелигентен проектор",
+    "description_bg": "Преносим проектор с Wi-Fi поддръжка."
+  },
+  {
+    "id": "P1049",
+    "name": "E-Reader",
+    "description": "Glare-free e-reader with backlight.",
+    "price": 129.99,
+    "category": "Electronics",
+    "name_bg": "E-четец",
+    "description_bg": "E-четец без бликане със светлина отзад."
+  },
+  {
+    "id": "P1050",
+    "name": "Tablet 10-inch",
+    "description": "10-inch tablet for work and entertainment.",
+    "price": 229.99,
+    "category": "Electronics",
+    "name_bg": "Таблет 10 инча",
+    "description_bg": "10-инчев таблет за работа и развлечение."
+  },
+  {
+    "id": "P1051",
+    "name": "Smart Pen",
+    "description": "Stylus pen for tablets.",
+    "price": 29.99,
+    "category": "Accessories",
+    "name_bg": "Интелигентна писалка",
+    "description_bg": "Стилус писалка за таблети."
+  },
+  {
+    "id": "P1052",
+    "name": "Graphics Tablet",
+    "description": "Drawing tablet for designers.",
+    "price": 99.99,
+    "category": "Computers",
+    "name_bg": "Графичен таблет",
+    "description_bg": "Таблет за рисуване за дизайнери."
+  },
+  {
+    "id": "P1053",
+    "name": "Label Printer",
+    "description": "Compact label printer for home office.",
+    "price": 79.99,
+    "category": "Office",
+    "name_bg": "Принтер за етикети",
+    "description_bg": "Компактен принтер за етикети за домашен офис."
+  },
+  {
+    "id": "P1054",
+    "name": "Paper Shredder",
+    "description": "Cross-cut paper shredder.",
+    "price": 69.99,
+    "category": "Office",
+    "name_bg": "Разсипвач на хартия",
+    "description_bg": "Кръстосан разсипвач на хартия."
+  },
+  {
+    "id": "P1055",
+    "name": "Portable Scanner",
+    "description": "Handheld document scanner.",
+    "price": 119.99,
+    "category": "Office",
+    "name_bg": "Преносим скенер",
+    "description_bg": "Преносим скенер за документи."
+  },
+  {
+    "id": "P1056",
+    "name": "Smart Alarm Clock",
+    "description": "Alarm clock with voice assistant.",
+    "price": 49.99,
+    "category": "Smart Home",
+    "name_bg": "Интелигентен будилник",
+    "description_bg": "Будилник с гласов асистент."
+  },
+  {
+    "id": "P1057",
+    "name": "Digital Photo Frame",
+    "description": "Wi-Fi digital photo frame.",
+    "price": 89.99,
+    "category": "Home",
+    "name_bg": "Цифрова фотографска рамка",
+    "description_bg": "Wi-Fi цифрова фотографска рамка."
+  },
+  {
+    "id": "P1058",
+    "name": "Weather Station",
+    "description": "Indoor and outdoor weather monitoring.",
+    "price": 99.99,
+    "category": "Home",
+    "name_bg": "Метеорологична станция",
+    "description_bg": "Мониторинг на вътрешната и външната температура."
+  },
+  {
+    "id": "P1059",
+    "name": "Pet Camera",
+    "description": "Camera for monitoring pets remotely.",
+    "price": 129.99,
+    "category": "Pets",
+    "name_bg": "Домашна животинска камера",
+    "description_bg": "Камера за отдалечено наблюдение на домашни животни."
+  },
+  {
+    "id": "P1060",
+    "name": "Automatic Pet Feeder",
+    "description": "Smart feeder with scheduled meals.",
+    "price": 149.99,
+    "category": "Pets",
+    "name_bg": "Автоматична хранилка за домашни животни",
+    "description_bg": "Интелигентна хранилка с планирани хранения."
+  },
+  {
+    "id": "P1061",
+    "name": "Electric Scooter",
+    "description": "Foldable electric scooter for commuting.",
+    "price": 499.99,
+    "category": "Transportation",
+    "name_bg": "Електрически скутер",
+    "description_bg": "Сгъваем електрически скутер за пътуване."
+  },
+  {
+    "id": "P1062",
+    "name": "Smart Bike Lock",
+    "description": "Bluetooth-enabled bike lock.",
+    "price": 79.99,
+    "category": "Transportation",
+    "name_bg": "Интелигентна брава за велосипед",
+    "description_bg": "Блютут брава за велосипед."
+  },
+  {
+    "id": "P1063",
+    "name": "Portable Speaker",
+    "description": "Bluetooth speaker with deep bass.",
+    "price": 69.99,
+    "category": "Audio",
+    "name_bg": "Преносим говорител",
+    "description_bg": "Блютут говорител с дълбок бас."
+  },
+  {
+    "id": "P1064",
+    "name": "Studio Microphone",
+    "description": "USB microphone for streaming and podcasts.",
+    "price": 129.99,
+    "category": "Audio",
+    "name_bg": "Студио микрофон",
+    "description_bg": "USB микрофон за стриймване и подкасти."
+  },
+  {
+    "id": "P1065",
+    "name": "Pop Filter",
+    "description": "Microphone pop filter for clear audio.",
+    "price": 14.99,
+    "category": "Audio",
+    "name_bg": "Pop филтър",
+    "description_bg": "Pop филтър за микрофон за ясен звук."
+  },
+  {
+    "id": "P1066",
+    "name": "Ring Light",
+    "description": "LED ring light for video recording.",
+    "price": 39.99,
+    "category": "Photography",
+    "name_bg": "Кръгла светлина",
+    "description_bg": "LED кръгла светлина за видео записване."
+  },
+  {
+    "id": "P1067",
+    "name": "Green Screen",
+    "description": "Portable green screen backdrop.",
+    "price": 99.99,
+    "category": "Photography",
+    "name_bg": "Зелен екран",
+    "description_bg": "Преносим зелен екран фон."
+  },
+  {
+    "id": "P1068",
+    "name": "Streaming Capture Card",
+    "description": "Capture card for game streaming.",
+    "price": 149.99,
+    "category": "Gaming",
+    "name_bg": "Streaming карта за захват",
+    "description_bg": "Карта за захват за игро потоци."
+  },
+  {
+    "id": "P1069",
+    "name": "Network Switch",
+    "description": "8-port gigabit network switch.",
+    "price": 49.99,
+    "category": "Networking",
+    "name_bg": "Мрежов превключвател",
+    "description_bg": "8-портов гигабитен мрежов превключвател."
+  },
+  {
+    "id": "P1070",
+    "name": "Firewall Router",
+    "description": "Secure router with firewall features.",
+    "price": 199.99,
+    "category": "Networking",
+    "name_bg": "Маршрутизатор с защита",
+    "description_bg": "Защитен маршрутизатор с функции защита."
+  },
+  {
+    "id": "P1071",
+    "name": "NAS Storage",
+    "description": "Network attached storage for backups.",
+    "price": 399.99,
+    "category": "Storage",
+    "name_bg": "NAS хранилище",
+    "description_bg": "Мрежово хранилище за резервни копия."
+  },
+  {
+    "id": "P1072",
+    "name": "Memory Card 256GB",
+    "description": "High-capacity SD memory card.",
+    "price": 49.99,
+    "category": "Storage",
+    "name_bg": "Памет карта 256GB",
+    "description_bg": "SD памет карта с голяма капацитет."
+  },
+  {
+    "id": "P1073",
+    "name": "USB Flash Drive 128GB",
+    "description": "Portable USB flash storage.",
+    "price": 24.99,
+    "category": "Storage",
+    "name_bg": "USB флаш памет 128GB",
+    "description_bg": "Преносимо USB хранилище."
+  },
+  {
+    "id": "P1074",
+    "name": "Cable Organizer",
+    "description": "Cable management box for desks.",
+    "price": 19.99,
+    "category": "Accessories",
+    "name_bg": "Организатор на кабели",
+    "description_bg": "Кутия за управление на кабели."
+  },
+  {
+    "id": "P1075",
+    "name": "Surge Protector",
+    "description": "Power strip with surge protection.",
+    "price": 29.99,
+    "category": "Accessories",
+    "name_bg": "Защита от скок на напрежението",
+    "description_bg": "Разклонител с защита от скок."
+  },
+  {
+    "id": "P1076",
+    "name": "Smart Smoke Detector",
+    "description": "Wi-Fi smoke and carbon monoxide detector.",
+    "price": 119.99,
+    "category": "Security",
+    "name_bg": "Интелигентен детектор за дим",
+    "description_bg": "Wi-Fi детектор за дим и въглероден оксид."
+  },
+  {
+    "id": "P1077",
+    "name": "Water Leak Sensor",
+    "description": "Detects water leaks and sends alerts.",
+    "price": 39.99,
+    "category": "Smart Home",
+    "name_bg": "Датчик за течове на вода",
+    "description_bg": "Обнаружава течове на вода и изпраща предупреждения."
+  },
+  {
+    "id": "P1078",
+    "name": "Garage Door Controller",
+    "description": "Smart controller for garage doors.",
+    "price": 99.99,
+    "category": "Smart Home",
+    "name_bg": "Контролер за гаражна врата",
+    "description_bg": "Интелигентен контролер за гаражни врати."
+  },
+  {
+    "id": "P1079",
+    "name": "Smart Irrigation System",
+    "description": "Automated garden watering system.",
+    "price": 149.99,
+    "category": "Outdoor",
+    "name_bg": "Интелигентна система за напояване",
+    "description_bg": "Автоматизирана система за напояване на градина."
+  },
+  {
+    "id": "P1080",
+    "name": "Outdoor Security Light",
+    "description": "Motion-activated outdoor light.",
+    "price": 59.99,
+    "category": "Outdoor",
+    "name_bg": "Външна охранна светлина",
+    "description_bg": "Външна светлина, активирана от движение."
+  },
+  {
+    "id": "P1081",
+    "name": "Portable Generator",
+    "description": "Compact generator for emergency power.",
+    "price": 699.99,
+    "category": "Outdoor",
+    "name_bg": "Преносимо електрогенератор",
+    "description_bg": "Компактен генератор за аварийно захранване."
+  },
+  {
+    "id": "P1082",
+    "name": "Camping Lantern",
+    "description": "Rechargeable LED camping lantern.",
+    "price": 29.99,
+    "category": "Outdoor",
+    "name_bg": "Палатка светлина",
+    "description_bg": "Преоредима LED палатка светлина."
+  },
+  {
+    "id": "P1083",
+    "name": "Smart Water Bottle",
+    "description": "Tracks daily water intake.",
+    "price": 49.99,
+    "category": "Health",
+    "name_bg": "Интелигентна бутилка за вода",
+    "description_bg": "Проследява дневното потребление на вода."
+  },
+  {
+    "id": "P1084",
+    "name": "Massage Gun",
+    "description": "Deep tissue massage device.",
+    "price": 129.99,
+    "category": "Health",
+    "name_bg": "Масажен пистолет",
+    "description_bg": "Устройство за масаж на дълбоки тъкани."
+  },
+  {
+    "id": "P1085",
+    "name": "Yoga Mat",
+    "description": "Non-slip yoga mat.",
+    "price": 29.99,
+    "category": "Fitness",
+    "name_bg": "Мат за йога",
+    "description_bg": "Мат за йога без хлъзгане."
+  },
+  {
+    "id": "P1086",
+    "name": "Resistance Bands",
+    "description": "Set of resistance bands for workouts.",
+    "price": 24.99,
+    "category": "Fitness",
+    "name_bg": "Еластични ленти",
+    "description_bg": "Комплект еластични ленти за тренировки."
+  },
+  {
+    "id": "P1087",
+    "name": "Treadmill",
+    "description": "Foldable treadmill for home workouts.",
+    "price": 799.99,
+    "category": "Fitness",
+    "name_bg": "Пътека за бягане",
+    "description_bg": "Сгъваема пътека за бягане за домашни тренировки."
+  },
+  {
+    "id": "P1088",
+    "name": "Smart Rowing Machine",
+    "description": "Connected rowing machine with app support.",
+    "price": 999.99,
+    "category": "Fitness",
+    "name_bg": "Интелигентна гребна машина",
+    "description_bg": "Свързана гребна машина с поддръжка на приложение."
+  },
+  {
+    "id": "P1089",
+    "name": "Digital Thermometer",
+    "description": "Fast-reading digital thermometer.",
+    "price": 14.99,
+    "category": "Health",
+    "name_bg": "Цифров термометър",
+    "description_bg": "Бързочитаем цифров термометър."
+  },
+  {
+    "id": "P1090",
+    "name": "UV Sanitizer Box",
+    "description": "UV box for sanitizing small items.",
+    "price": 39.99,
+    "category": "Health",
+    "name_bg": "UV санитайзер кутия",
+    "description_bg": "UV кутия за санитизиране на малки предмети."
+  },
+  {
+    "id": "P1091",
+    "name": "Smart Mirror",
+    "description": "Interactive mirror with display.",
+    "price": 499.99,
+    "category": "Home",
+    "name_bg": "Интелигентно огледало",
+    "description_bg": "Интерактивно огледало с дисплей."
+  },
+  {
+    "id": "P1092",
+    "name": "Electric Blanket",
+    "description": "Heated blanket with temperature control.",
+    "price": 79.99,
+    "category": "Home",
+    "name_bg": "Електрическо одеяло",
+    "description_bg": "Нагрявано одеяло с контрол на температурата."
+  },
+  {
+    "id": "P1093",
+    "name": "Humidifier",
+    "description": "Cool mist humidifier for rooms.",
+    "price": 49.99,
+    "category": "Home",
+    "name_bg": "Овлажнител",
+    "description_bg": "Овлажнител с прохладна мъгла за стаи."
+  },
+  {
+    "id": "P1094",
+    "name": "Dehumidifier",
+    "description": "Removes excess moisture from air.",
+    "price": 179.99,
+    "category": "Home",
+    "name_bg": "Осушител",
+    "description_bg": "Премахва излишната влага от въздуха."
+  },
+  {
+    "id": "P1095",
+    "name": "Smart Fan",
+    "description": "Wi-Fi enabled fan with app control.",
+    "price": 129.99,
+    "category": "Home",
+    "name_bg": "Интелигентен вентилатор",
+    "description_bg": "Wi-Fi вентилатор с контрол през приложение."
+  },
+  {
+    "id": "P1096",
+    "name": "Portable Air Conditioner",
+    "description": "Mobile air conditioner unit.",
+    "price": 399.99,
+    "category": "Home Appliances",
+    "name_bg": "Преносим климатик",
+    "description_bg": "Мобилно хладилно устройство."
+  },
+  {
+    "id": "P1097",
+    "name": "Smart Refrigerator",
+    "description": "Connected refrigerator with touch display.",
+    "price": 1999.99,
+    "category": "Home Appliances",
+    "name_bg": "Интелигентен хладилник",
+    "description_bg": "Свързан хладилник с сензорен дисплей."
+  },
+  {
+    "id": "P1098",
+    "name": "Dishwasher",
+    "description": "Energy-efficient dishwasher.",
+    "price": 699.99,
+    "category": "Home Appliances",
+    "name_bg": "Съдомиялна машина",
+    "description_bg": "Енергоспестяваща съдомиялна машина."
+  },
+  {
+    "id": "P1099",
+    "name": "Washing Machine",
+    "description": "Front-load washing machine.",
+    "price": 799.99,
+    "category": "Home Appliances",
+    "name_bg": "Пералня",
+    "description_bg": "Предна пералня."
+  },
+  {
+    "id": "P1100",
+    "name": "Dryer",
+    "description": "Electric clothes dryer.",
+    "price": 749.99,
+    "category": "Home Appliances",
+    "name_bg": "Сушилня",
+    "description_bg": "Електрическа сушилня."
+  }
+]

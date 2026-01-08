@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Support Bot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="header__title">
+          <h1>Support Bot</h1>
+          <p class="header__subtitle">Ask about products and mock order status.</p>
+        </div>
+
+        <div class="header__actions">
+          <label class="toggle">
+            <input id="themeToggle" type="checkbox" />
+            <span>🌙 Dark</span>
+          </label>
+          <label class="toggle">
+            <input id="debugToggle" type="checkbox" />
+            <span>Debug</span>
+          </label>
+          <button id="clearBtn" class="btn btn--secondary" type="button">Clear</button>
+        </div>
+      </header>
+
+      <main class="card">
+        <div id="chat" class="chat" aria-live="polite">
+          {% if chat and chat|length > 0 %}
+            {% for msg in chat %}
+              <div class="bubble-row {{ 'bubble-row--user' if msg.role == 'user' else 'bubble-row--bot' }}">
+                <div class="bubble {{ 'bubble--user' if msg.role == 'user' else 'bubble--bot' }}">
+                  <div class="bubble__text">{{ msg.text }}</div>
+                  {% if msg.debug %}
+                    <pre class="bubble__debug">{{ msg.debug | tojson(indent=2) }}</pre>
+                  {% endif %}
+                  <div class="bubble__meta">{{ msg.ts }}</div>
+                </div>
+              </div>
+            {% endfor %}
+          {% else %}
+            <div class="empty">
+              <div class="empty__title">Start a conversation</div>
+              <div class="empty__hint">Try: <code>What's the price of the Pro model?</code> or <code>status of order #12345</code></div>
+            </div>
+          {% endif %}
+        </div>
+
+        <div id="error" class="error" hidden></div>
+
+        <form id="composer" class="composer" autocomplete="off">
+          <input
+            id="messageInput"
+            name="message"
+            class="composer__input"
+            placeholder="Type your question…"
+            maxlength="2000"
+            required
+          />
+          <button id="sendBtn" class="btn btn--primary" type="submit">Send</button>
+        </form>
+
+        <div id="loading" class="loading" hidden style="display: none;">
+          <div class="loading__dot"></div>
+          <div class="loading__dot"></div>
+          <div class="loading__dot"></div>
+          <span class="loading__text">Thinking…</span>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <span>The Smart Customer Support Bot • 2025 </span>
+      </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>
