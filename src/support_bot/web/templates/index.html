@@ -17,27 +17,25 @@
         <div class="header__actions">
           <label class="toggle">
             <input id="themeToggle" type="checkbox" />
-            <span>🌙 Dark</span>
+            <span>Theme</span>
           </label>
-          <label class="toggle">
-            <input id="debugToggle" type="checkbox" />
-            <span>Debug</span>
-          </label>
-          <button id="clearBtn" class="btn btn--secondary" type="button">Clear</button>
+          <button id="clearBtn" class="btn btn--secondary" type="button" title="Clear history">
+            <span class="btn__icon" aria-hidden="true">🕘</span>
+            <span>Clear history</span>
+          </button>
         </div>
       </header>
 
-      <main class="card">
-        <div id="chat" class="chat" aria-live="polite">
+      <main class="main">
+        <div id="chat" class="chat" aria-live="polite" data-has-server-history="{{ 1 if chat and chat|length > 0 else 0 }}">
+          <div id="chatDate" class="chat-date" hidden></div>
+
           {% if chat and chat|length > 0 %}
             {% for msg in chat %}
               <div class="bubble-row {{ 'bubble-row--user' if msg.role == 'user' else 'bubble-row--bot' }}">
                 <div class="bubble {{ 'bubble--user' if msg.role == 'user' else 'bubble--bot' }}">
                   <div class="bubble__text">{{ msg.text }}</div>
-                  {% if msg.debug %}
-                    <pre class="bubble__debug">{{ msg.debug | tojson(indent=2) }}</pre>
-                  {% endif %}
-                  <div class="bubble__meta">{{ msg.ts }}</div>
+                  <div class="bubble__meta" data-ts="{{ msg.ts }}">{{ msg.ts }}</div>
                 </div>
               </div>
             {% endfor %}
@@ -70,10 +68,6 @@
           <span class="loading__text">Thinking…</span>
         </div>
       </main>
-
-      <footer class="footer">
-        <span>The Smart Customer Support Bot • 2025 </span>
-      </footer>
     </div>
 
     <script src="{{ url_for('static', filename='app.js') }}"></script>

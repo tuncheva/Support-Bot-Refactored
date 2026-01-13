@@ -15,13 +15,51 @@ function escapeHtml(text) {
   return div.innerHTML;
 }
 
-function addBubble({ role, text, ts, debug }) {
+function formatTimeHHMM(isoTs) {
+  try {
+    const d = new Date(isoTs);
+    return new Intl.DateTimeFormat(undefined, {
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: false,
+    }).format(d);
+  } catch {
+    return '';
+  }
+}
+
+function formatDateHeader(isoTs) {
+  try {
+    const d = new Date(isoTs);
+    return new Intl.DateTimeFormat(undefined, {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'short',
+      day: '2-digit',
+    }).format(d);
+  } catch {
+    return '';
+  }
+}
+
+function ensureDateHeader(isoTs) {
+  const el = qs('#chatDate');
+  if (!el) return;
+  const label = formatDateHeader(isoTs);
+  if (!label) return;
+  el.textContent = label;
+  el.hidden = false;
+}
+
+function addBubble({ role, text, ts }) {
   const chat = qs('#chat');
   if (!chat) return;
 
   // Remove empty state if present.
   const empty = chat.querySelector('.empty');
   if (empty) empty.remove();
+
+  if (ts) ensureDateHeader(ts);
 
   const row = document.createElement('div');
   row.className = `bubble-row ${role === 'user' ? 'bubble-row--user' : 'bubble-row--bot'}`;
@@ -34,16 +72,9 @@ function addBubble({ role, text, ts, debug }) {
   textEl.innerHTML = escapeHtml(text);
   bubble.appendChild(textEl);
 
-  if (debug) {
-    const pre = document.createElement('pre');
-    pre.className = 'bubble__debug';
-    pre.textContent = JSON.stringify(debug, null, 2);
-    bubble.appendChild(pre);
-  }
-
   const meta = document.createElement('div');
   meta.className = 'bubble__meta';
-  meta.textContent = ts || '';
+  meta.textContent = ts ? formatTimeHHMM(ts) : '';
   bubble.appendChild(meta);
 
   row.appendChild(bubble);
@@ -51,6 +82,14 @@ function addBubble({ role, text, ts, debug }) {
 
   // auto-scroll
   chat.scrollTop = chat.scrollHeight;
+
+  // Also scroll the page (helps when the chat column isn't the scroll container).
+  try {
+    const scroller = document.scrollingElement || document.documentElement;
+    scroller.scrollTop = scroller.scrollHeight;
+  } catch {
+    // ignore
+  }
 }
 
 async function postJson(url, body, { timeoutMs = 45000 } = {}) {
@@ -117,7 +156,6 @@ function init() {
   const form = qs('#composer');
   const input = qs('#messageInput');
   const clearBtn = qs('#clearBtn');
-  const debugToggle = qs('#debugToggle');
   const themeToggle = qs('#themeToggle');
   const chat = qs('#chat');
 
@@ -141,6 +179,18 @@ function init() {
     });
   }
 
+  if (chat) {
+    // If server rendered history, format timestamps and show date header.
+    const metas = chat.querySelectorAll('.bubble__meta[data-ts]');
+    let firstTs = null;
+    metas.forEach((m) => {
+      const ts = m.getAttribute('data-ts');
+      if (!firstTs && ts) firstTs = ts;
+      m.textContent = ts ? formatTimeHHMM(ts) : '';
+    });
+    if (firstTs) ensureDateHeader(firstTs);
+  }
+
   if (form && input) {
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
@@ -149,14 +199,18 @@ function init() {
       const message = (input.value || '').trim();
       if (!message) return;
 
-      const debug = !!(debugToggle && debugToggle.checked);
-
       addBubble({ role: 'user', text: message, ts: new Date().toISOString() });
       input.value = '';
       setLoading(true);
 
+      // Force scroll after layout settles.
+      requestAnimationFrame(() => {
+        const chatEl = qs('#chat');
+        if (chatEl) chatEl.scrollTop = chatEl.scrollHeight;
+      });
+
       try {
-        const data = await postJson('/api/chat', { message, debug });
+        const data = await postJson('/api/chat', { message });
         const replyText = (data && typeof data.reply === 'string') ? data.reply : '';
         if (!replyText) {
           throw new Error('No reply received from server.');
@@ -165,7 +219,12 @@ function init() {
           role: 'bot',
           text: replyText,
           ts: new Date().toISOString(),
-          debug: data.debug,
+        });
+
+        // Force scroll after render.
+        requestAnimationFrame(() => {
+          const chatEl = qs('#chat');
+          if (chatEl) chatEl.scrollTop = chatEl.scrollHeight;
         });
       } catch (err) {
         showError(err && err.message ? err.message : String(err));
